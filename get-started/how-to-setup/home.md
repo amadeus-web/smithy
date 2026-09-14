@@ -31,7 +31,9 @@ DIV-LARGELIST
 1. Run "xampp-control.exe" as admin and change the httpd.conf file
 1. Change the DocumentRoot from `D:\Work\xampp\htdocs` to `D:\Work\public_html`
 1. Tick the checkbox to allow Apache to be installed as a service. Also click run (row should hae a green lael saying running on port 80).
+1. Clone [spring from github](https://github.com/amadeus-web/spring) using tortoise git into public_html.
 1. Visit [localhost/spring/](http://localhost/spring/) in the browser - it should show the amadeus9 site content but broken (see #3 - theme assets setup below).
+1. Visit [repos](http://localhost/spring/repos/) to clone other parts of the federated network. Needs you to run ./spring/network/_setup.bat
 
 DIV-CLOSE
 
@@ -44,8 +46,7 @@ DIV-CLOSE
 DIV-LARGELIST
 
 1. Navigate to `D:\Work\public_html\spring\themes\canvas\`
-1. Run `02--install-theme.bat` - do this everytime the theme assets are changed, renaming the old assets folder (in case it has pending changes etc).
+1. Run `01--install-theme.bat` - do this everytime the theme assets are changed, renaming the old assets folder (in case it has pending changes etc).
 1. Visit localhost/spring/ again, it should be working (network tab shows all assets loaded).
-1. Click the button 'Enter Core v8 Site` - you should see the documentation.
 
 DIV-CLOSE
